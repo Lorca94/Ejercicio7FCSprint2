@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" type="text/css" rel="stylesheet" >
+    <title>Plantilla Alumno</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <script src="src/main.js"></script>
+</head>
+<body>
+    <div class="contenedor">
+       <!--Principio de la cabecera-->
+        <div class="cabecera">
+            <input type="button" value="← Volver">
+        </div>
+        <!--Final de la cabecera-->
+        <!--Principio de la ficha-->
+        <div class="ficha-contenedor">
+            <div class = "ficha">
+                <div class="ficha-alumno">
+                    <!--Imagen y nombre de alumno-->
+                    <div class="ficha-alumno__foto-info">
+                        <div class="ficha-alumno__foto">
+                            <img src="src/fotocv.jpg" width="90" height="90"/>
+                            <div class="ficha-alumno__foto-nombre">
+                                <label>Nombre Alumno</label>
+                                <div class="ficha-alumno__foto-direccion">
+                                    <img src="src/ubicacion.png" width="13,33" height="16,67">
+                                    <label>Valencia</label>
+                                    <label>|</label>
+                                    <label>España</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!--datos personales del alumno-->
+                        <div class="ficha-alumno__info">
+                            <div class="ficha-alumno__info-nombreapellido">
+                                <label>Nombre y Apellidos</label>
+                                <div class="nombreyapellidos">
+                                    <label>Nombre Alumno</label>
+                                </div>
+                            </div>
+
+                            <div class="ficha-alumno__info-telefonoemail">
+                                <div class="ficha-alumno__info-telefono">
+                                    <label>Nº Telefono</label>
+                                    <div class="telefono">
+                                        <label>+34 654 85 52 48</label>
+                                    </div>
+                                </div>
+                                <div class="ficha-alumno__info-email">
+                                    <label>Email</label>
+                                    <div class="email">
+                                        <label>ejemplo@mail.com</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="ficha-alumno__info-paisciudad">
+                                <div class="ficha-alumno__info-pais">
+                                    <label>Pais</label>
+                                    <div class="pais">
+                                        <select name="País">
+                                            <option disabled>Elige un país</option>
+                                            <option selected value="1">España</option> 
+                                            <option value="2">Argentina</option> 
+                                            <option value="3">México</option>
+                                            <option value="4">Ecuador</option> 
+                                            <option value="5">Colombia</option> 
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="ficha-alumno__info-ciudad">
+                                    <label>Ciudad</label>
+                                    <div class="ciudad">
+                                        <select name="Ciudad">
+                                            <option disabled>Elige una ciudad</option>
+                                            <option value="1">Murcia</option> 
+                                            <option selected value="2">Valencia</option> 
+                                            <option value="3">Madrid</option>
+                                            <option value="4">Barcelona</option> 
+                                            <option value="5">Sevilla</option> 
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ficha-alumno__info-trasladopresencilidad">
+                                <div class="ficha-alumno__info-traslado">
+                                    <label>Traslado</label>
+                                    <div class="traslado">
+                                        <select name="traslado">
+                                            <option disabled>Elige una opción</option>
+                                            <option selected value="1">Sí</option> 
+                                            <option value="2">No</option> 
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="ficha-alumno__info-presencialidad">
+                                    <label>Presencilidad</label>
+                                    <div class="presencialidad">
+                                        <select name="presencialidad">
+                                            <option disabled>Elige una opción</option>
+                                            <option value="1">Sí</option> 
+                                            <option selected value="2">No</option> 
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ficha-alumno__info-curriculum">
+                                <div class="ficha-alumno__info-curriculum-titulo">
+                                    <label>Documento CV</label>
+                                    <div class="ficha-alumno__info-curriculum-subir">
+                                        <input name="subir-cv" type="button" value="       Subir de nuevo" id="subir-cv" class="subir-cv"/>
+                                        <input name="borrar-cv" type="button" value="Borrar" id="borrar-cv" class="borrar-cv"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="ficha-alumno__info-curriculum-buscaretiqueta">
+                                <div class="buscador-etiquetas">
+                                    <label>Etiquetas</label>
+                                    <div style="display: flex; flex-direction: row; margin: 6px 0;">
+                                        <input id="buscador" type="search" name="busquedaetiquetas" list="listaetiquetas" placeholder="  Escribe para buscar">
+                                        <datalist id="listaetiquetas">
+                                            <option value="HTML&CSS">
+                                            <option value="REACT">
+                                            <option value="SPRINT">
+                                            <option value="JAVA">
+                                        </datalist>
+                                    
+                                        <button onclick="imprimirEtiquetas()">Añadir</button>
+                                    </div>
+                                    <div id="imprimir-etiquetas" class="imprimir-etiquetas">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+            <!--Principio de lector pdf-->
+            <div class="pdfreader"></div>
+            <!--Final de lector pdf-->
+        </div>
+    <!--Final de la ficha--> 
+    </div>
+</body>
+</html>

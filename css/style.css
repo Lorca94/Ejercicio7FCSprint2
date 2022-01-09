@@ -1,0 +1,684 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: Raleway;
+    font-style: normal;
+}
+html,body{
+
+    background: #F8F8F9;
+    
+}
+.contenedor{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+}
+.cabecera{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 18px 40px 12px;
+
+    position: absolute;
+    width: 95%;
+    height: 7%;
+    right: 0px;
+    top: 0px;
+}
+
+.cabecera input{
+    position:static;
+    width: 76px;
+    height: 20px;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    cursor: pointer;
+
+    border-style: none;
+    background-color:  #F8F8F9;
+}
+.ficha-contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    
+    position: absolute;
+    width: 100%;
+    height: 92%;
+    left: 0px;
+    top: 8%;
+}
+.ficha{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: static;
+    width: 30%;
+    height: 90%;
+    left: 40px;
+    top: 40px;
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 0px 40px;
+}
+
+.pdfreader{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: static;
+    width: 52%;
+    height: 90%;
+    left: 580px;
+    top: 40px;
+
+    box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 1;
+    margin: 0px 40px;
+}
+
+.ficha-alumno__foto-info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+
+    position: static;
+    width: 32.25em;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+
+    background: #FFFFFF;
+
+    border: 1px solid #E6E6EA;
+    box-sizing: border-box;
+    border-radius: 20px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+}
+.ficha-alumno__foto{
+    display:flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+    position:static;
+    width: 100%;
+    height: 5.625em;
+}
+
+.ficha-alumno__foto img{
+    width: 5,625em;
+    height: 5,625em;
+    border-radius: 0.5em;
+}
+.ficha-alumno__foto-nombre{
+    padding: 12px;
+}
+.ficha-alumno__foto-nombre label{
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 28px;
+    align-self: stretch;
+    margin: 5px 0px;
+}
+.ficha-alumno__foto-direccion {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+
+    position: static;
+
+    height: 20px;
+    left: 0px;
+    top: 53px;
+    margin: 15px 0px;
+}
+.ficha-alumno__foto-direccion label{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #A5A8B3;
+
+    margin: 0px 8px;
+    align-self: center;
+    
+}
+
+.ficha-alumno__info{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+
+    margin: 1.5em 0px;
+}
+
+.ficha-alumno__info-nombreapellido{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    margin:0.75em 0px;
+}
+.nombreyapellidos{
+    display: flex;
+    flex-direction: row;
+    padding: 12px 15px;
+    width: 30.25em;
+    height: 40px;
+    background: #F8F8F9;
+    border-radius: 8px;
+    align-items: center;
+    align-self: stretch;
+    margin:0.75em 0px;
+}
+.nombreyapellidos label{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.ficha-alumno__info-telefonoemail{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+    position:static;
+    width: 26.76em;
+    height: 4.25em;
+}
+.ficha-alumno__info-telefono{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    position:static;
+    width: 13.38em;
+    height: 4.25em;
+}
+
+.ficha-alumno__info-telefono label{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: -0.01em;
+}
+.telefono {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 15px;
+
+    position: static;
+    width: 9.75em;
+    height: 2.5em;
+    left: 0px;
+    top: 28px;
+
+    background: #F8F8F9;
+    border-radius: 8px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 12px 0px;
+}
+.telefono label{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: -0.01em;
+}
+.ficha-alumno__info-email{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    position:static;
+    width: 13.38em;
+    height: 4.25em;
+}
+.ficha-alumno__info-email label{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: -0.01em;
+}
+.email{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 15px;
+
+    position: static;
+    width: 13em;
+    height: 2.5em;
+    left: 0px;
+    top: 28px;
+
+    background: #F8F8F9;
+    border-radius: 8px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 12px 0px;
+}
+
+.email label{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: -0.01em;
+}
+
+.ficha-alumno__info-paisciudad{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+    position:static;
+    width: 26.76em;
+    height: 4.25em;
+    top: 11.5em;
+}
+.ficha-alumno__info-pais{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position:static;
+    width: 13.38em;
+    height: 4.25em;
+    margin: 2.5em 0px;
+}
+.ficha-alumno__info-pais label{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: -0.01em;
+}
+.pais{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 15px;
+
+    position: static;
+    width: 9.75em;
+    height: 2.5em;
+    left: 0px;
+    top: 28px;
+
+    background: #F8F8F9;
+    border-radius: 8px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 12px 0px;
+}
+.pais select{   
+    position: static;
+    width: 100%;
+    height: 50%;
+    left: 0px;
+    top: 28px;
+
+    background: #F8F8F9;
+    border-radius: 8px;
+    border-style: none;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 12px 0px;
+}
+.ficha-alumno__info-ciudad{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position:static;
+    width: 13.38em;
+    height: 4.25em;
+    margin: 2.5em 0px;
+}
+.ficha-alumno__info-ciudad label{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: -0.01em;
+}
+.ciudad{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 15px;
+
+    position: static;
+    width: 13em;
+    height: 2.5em;
+    left: 0px;
+    top: 28px;
+
+    background: #F8F8F9;
+    border-radius: 8px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 12px 0px;
+}
+.ciudad select{   
+    position: static;
+    width: 100%;
+    height: 50%;
+    left: 0px;
+    top: 28px;
+
+    background: #F8F8F9;
+    border-radius: 8px;
+    border-style: none;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 12px 0px;
+}
+.ficha-alumno__info-trasladopresencilidad{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+    position:static;
+    width: 26.76em;
+    height: 4.25em;
+    top: 11.5em;
+    margin: 2.75em 0;
+}
+
+.ficha-alumno__info-traslado{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position:static;
+    width: 13.38em;
+    height: 4.25em;
+    margin: 2.5em 0px;
+}
+.ficha-alumno__info-traslado label{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: -0.01em;
+}
+.traslado{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 15px;
+
+    position: static;
+    width: 9.75em;
+    height: 2.5em;
+    left: 0px;
+    top: 28px;
+
+    background: #F8F8F9;
+    border-radius: 8px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 12px 0px;
+}
+
+.traslado select{
+    position: static;
+    width: 100%;
+    height: 50%;
+    left: 0px;
+    top: 28px;
+
+    background: #F8F8F9;
+    border-radius: 8px;
+    border-style: none;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 12px 0px;
+}
+.ficha-alumno__info-presencialidad{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position:static;
+    width: 13.38em;
+    height: 4.25em;
+    margin: 2.5em 0px;
+}
+.ficha-alumno__info-presencialidad label{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: -0.01em;
+}
+.presencialidad{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 15px;
+
+    position: static;
+    width: 13em;
+    height: 2.5em;
+    left: 0px;
+    top: 28px;
+
+    background: #F8F8F9;
+    border-radius: 8px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 12px 0px;
+}
+.presencialidad select{   
+    position: static;
+    width: 100%;
+    height: 50%;
+    left: 0px;
+    top: 28px;
+
+    background: #F8F8F9;
+    border-radius: 8px;
+    border-style: none;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 12px 0px;
+}
+.ficha-alumno__info-curriculum{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+    position:static;
+    width: 26.76em;
+    height: 4.25em;
+    top: 11.5em;
+    margin: 2.75em 0;
+}
+.ficha-alumno__info-curriculum-titulo label{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: -0.01em;
+}
+.ficha-alumno__info-curriculum-subir{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: static;
+    width: 17.125em;
+    height: 2.5em;
+    left: 0px;
+    top: 28px;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0.75em 0px;
+}
+
+.subir-cv {
+    padding: 0.313em 0.875em 0.313em 0.625em;
+
+    position: static;
+    width: 10.188em;
+    height: 2.5em;
+    left: 0px;
+    top: 0px;
+
+    background: #A5A8B3;
+    border-radius: 0.5em;
+    border-style: none;
+    margin: 0px 0.625em;
+
+    text-align:center;
+/* Greys/Grey4 */
+
+    background: #A5A8B3;
+    border-radius: 8px;
+
+
+    color: #FFFFFF;
+    background-image: url('../src/icon.png');
+    background-position: 5% 40% ;
+    background-repeat: no-repeat;
+    border-style: none;
+}
+.borrar-cv{
+    justify-content: center;
+    align-items: center;
+    padding: 0.313em 0.875em 0.313em 0.625em;
+
+    position: static;
+    width: 6.313em;
+    height: 2.5em;
+    left: 10.813em;
+    top: 0px;
+
+    background: #FFFFFF;
+
+    border: 1px solid #E6E6EA;
+    box-sizing: border-box;
+    border-radius: 0.5em;
+}
+
+.ficha-alumno__info-curriculum-buscaretiqueta{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: static;
+    width: 28.25em;
+    height: 8.625em;
+    left: 0px;
+    top: 28.75em;
+}
+.buscador-etiquetas{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    position: static;
+    width: 28.25em;
+    height: 4.25em;
+
+    margin: 0.938em 0;
+}
+
+.buscador-etiquetas label{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: -0.01em;
+    margin:12px 0;
+}
+.buscador-etiquetas input{
+    padding: 0.75em 0.938em;
+
+    position: static;
+    width: 28.25em;
+    height: 3.5em;
+    left: 0px;
+    top: 1.75em;
+
+    background: #F8F8F9;
+    border-radius: 0.5em;
+    border-style: none;
+}
+
+.buscador-etiquetas button{
+    padding: 0.75em 0.938em;
+
+    position: static;
+    width: 6.25em;
+    height: 3.5em;
+    left: 0px;
+    top: 1.75em;
+    margin: 0 5px;
+
+    background: #F8F8F9;
+    border-radius: 0.5em;
+    border-style: none;
+}
+.imprimir-etiquetas{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+    position: static;
+    width: 28.25em;
+    height: 1.5em;
+
+    align-self: stretch;
+    margin: 0.438em 0px;
+}
+
+.imprimir-etiquetas label{
+    padding: 0.188em 0.375em 0.188em 0.625em;
+
+    background: #E6E6EA;
+    border-radius: 1.25em;
+
+/* Inside auto layout */
+
+    margin: 0px 0.375em;
+}
